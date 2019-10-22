@@ -22,16 +22,15 @@ class BrowsePage extends StatelessWidget with Common {
             sliver: SliverList(
               delegate: SliverChildBuilderDelegate(
                 (context, index) => Container(
-                      padding: EdgeInsets.all(10.0),
-                      child: Material(
-                        elevation: 4.0,
-                        color:
-                            index % 2 == 0 ? Colors.amber : Colors.blueAccent,
-                        child: Center(
-                          child: Text("$index"),
-                        ),
-                      ),
+                  padding: EdgeInsets.all(10.0),
+                  child: Material(
+                    elevation: 4.0,
+                    color: index % 2 == 0 ? Colors.amber : Colors.blueAccent,
+                    child: Center(
+                      child: Text("$index"),
                     ),
+                  ),
+                ),
                 childCount: 20,
               ),
             ),
